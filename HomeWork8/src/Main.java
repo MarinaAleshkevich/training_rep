@@ -32,12 +32,12 @@ public class Main {
      Person p13 = new Person("Poppy","Gilbert", Gender.FEMALE);
      Person p14 = new Person("Freddy","Davis", Gender.MALE);
      Person p15 = new Person("Oliver","Moore", Gender.MALE);
-        Map<Person, Integer> persons2 = new HashMap<>();
-        persons2.put (p11,10);
-        persons2.put (p12,11);
-        persons2.put (p13,13);
-        persons2.put (p14,15);
-        persons2.put (p15,11);
+        Map<Integer, Person> persons2 = new HashMap<>();
+        persons2.put (10,p11);
+        persons2.put (11,p12);
+        persons2.put (13,p13);
+        persons2.put (15,p14);
+        persons2.put (18,p15);
         System.out.println(persons2);
         System.out.printf("HashMap has %d elements \n", persons2.size());
     }
